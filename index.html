@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <script src="https://use.fontawesome.com/273817c802.js"></script>
+    <!-- <script src="https://use.fontawesome.com/273817c802.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -22,35 +26,128 @@
     - The freeCodeCamp Team
 
     -->
-    <header id="header">
-      <span><img id="header-img" src="images/product-landing-page-logo.png" alt=""></span>
+    <!-- <header id="header">
+      <img id="header-img" src="images/product-landing-page-logo.png" alt="" />
       <nav id="nav-bar">
         <a href="#" class="nav-link">Features</a>
         <a href="#" class="nav-link">How It Works</a>
         <a href="#" class="nav-link">Pricing</a>
       </nav>
+    </header> -->
+    <header id="header">
+      <div class="logo">
+        <img
+          id="header-img"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="original trombones logo"
+        />
+      </div>
+
+      <nav id="nav-bar">
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#how-it-works">How It Works</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </ul>
+      </nav>
     </header>
 
     <div id="container">
-      <section id="signup">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
         <h1>Welcome to the Microverse Coding Trials</h1>
-        <input type="email" placeholder="Enter your email"><br>
-        <button>Get Started</button>
-      </section>
-
+        
+        <input type="email" id="email" name="email" required placeholder="Enter your email" /><br />
+        <input id="submit" type="submit" value="Get Started" class="btn" />
+      </form>
       <section id="features">
         <div class="feature-item">
           <div class="feature-item-icon">
-            <i class="fas fa-bug"></i>
+            <i class="fa fa-bug" style="font-size: 48px"></i>
           </div>
           <div class="feature-item-text">
-            <h1>Coding Challenge One - Partner 1</h1>
-            <p>The first coding challenge is completed by the driver, with the help of the navigator</p>
+            <h2>Coding Challenge One - Partner 1</h2>
+            <p>
+              The first coding challenge is completed by the driver, with the
+              help of the navigator
+            </p>
           </div>
         </div>
-       
+        <div class="feature-item">
+          <div class="feature-item-icon">
+            <!-- <i class="fa fa-bug" style="font-size: 48px"></i> -->
+            <i class="fa fa-coffee" style="font-size: 48px"></i>
+          </div>
+          <div class="feature-item-text">
+            <h2>Hackerrank coding session - Partner 2</h2>
+            <p>Partner 2 becomes the driver. Partner 1 the navigator</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item-icon">
+            <i class="fa fa-code" style="font-size: 48px"></i>
+          </div>
+          <div class="feature-item-text">
+            <h2>HTML, CSS and Git</h2>
+            <p>Completing the Miroverse coding trials</p>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works">
+      
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JNucTaCC6PQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </section>
 
+      <section id="pricing">
+        <div class="card">
+          <h3 class="">Basic</h3>
+          <p>$600</p>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div class="card">
+          <h3 class="">Intermediate</h3>
+          <p>$900</p>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div class="card">
+          <h3 class="">Advance</h3>
+          <p>$800</p>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <button>Select</button>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <span class="footeLinks">Privacy</span
+          ><span class="footeLinks">Terms</span
+          ><span class="footeLinks">Contact</span>
+        </div>
+        <div class="copyright">Copyright 2021, Original Devs</div>
+      </footer>
     </div>
     <script src="js/index.js"></script>
   </body>
