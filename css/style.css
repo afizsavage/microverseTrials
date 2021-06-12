@@ -20,7 +20,8 @@
 
 #container{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    flex-direction: column;
     width: 100%;
     margin: 0 auto;
 }
@@ -52,3 +53,4 @@
     border: none;
     border-radius: 7px;
 }
+
