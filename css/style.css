@@ -182,8 +182,28 @@ footer > div {
   margin-top: 10px;
 }
 
+@media (max-width: 500px) {
+    #header {
+        flex-wrap: wrap;
+      }
+   }
+
 @media (max-width: 600px) {
   #header {
     flex-wrap: wrap;
   }
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        flex-wrap: wrap;
+      }
+  }
+
+@media (max-width: 650px) {
+.logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+}
 }
