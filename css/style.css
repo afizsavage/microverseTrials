@@ -1,0 +1,19 @@
+#header  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+#header-img {
+    width: 300px;
+    height: 34.5px;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(37, 37, 37);
+    padding-left: 50px;
+}
