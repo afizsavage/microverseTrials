@@ -7,6 +7,19 @@
   padding: 20px 38px;
   background-color: rgb(216, 208, 208);
   width: 100%;
+  margin-left: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@media (max-width: 500px) {
+    #header {
+        flex-wrap: wrap;
+      }
 }
 
 #header-img {
@@ -20,16 +33,16 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(37, 37, 37);
-  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #container {
-  display: flex;
+ display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
+  margin-top: 85px;
 }
 
 #form {
@@ -42,14 +55,14 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#form input {
+#form input[type="email"] {
   width: 50%;
   margin-bottom: 15px;
   font-size: 16px;
   padding: 7px;
 }
 
-#signup button {
+#submit {
   font-size: 16px;
   font-weight: 600;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -186,24 +199,4 @@ footer > div {
     #header {
         flex-wrap: wrap;
       }
-   }
-
-@media (max-width: 600px) {
-  #header {
-    flex-wrap: wrap;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-    #header {
-        flex-wrap: wrap;
-      }
-  }
-
-@media (max-width: 650px) {
-.logo {
-    margin-top: 15px;
-    width: 100%;
-    position: relative;
-}
 }
